@@ -1,0 +1,42 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+
+print ("A function is a self contained chuck of code that performs a specific task.\nYou give a fuction its name to identify it, then you use that name to call\nthe function to perform its specific task.\n\n")
+
+func notNeedy(){
+    (print ("This function does not need anything in return"))
+}
+
+notNeedy()
+
+func needy(name:String){
+    print ("Hey \(name) how are you?")
+    print ("This function requires something in return")
+    
+}
+
+needy(name: "Jim")
+
+needy(name: "Rob")
+
+func greatestCity(city: String) -> String{ // This function returns something
+    let answer = "\(city) is the greatest city in the world!"
+    return answer
+}
+
+let userCity = greatestCity(city: "New York City")
+print (userCity)
+
+
+func student(name: String, gpa: Int) -> String{
+    let response = "\nStudents Name: \(name)\nStudents GPA:  \(gpa)"
+    
+    return response
+}
+
+let infoStudent = student(name:"Robert Ciaccio", gpa: 4)
+print (infoStudent)
+
